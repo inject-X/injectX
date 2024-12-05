@@ -31,7 +31,9 @@ class AppScannerViewModel: ObservableObject {
     
     func scanApps() {
         Task {
-            isScanning = true
+            await MainActor.run {
+                        self.isScanning = true
+                    }
             var newApps: [AppInfo] = []
             
             let fileManager = FileManager.default

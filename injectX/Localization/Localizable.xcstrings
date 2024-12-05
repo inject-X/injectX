@@ -231,6 +231,16 @@
         }
       }
     },
+    "Loading..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在加载"
+          }
+        }
+      }
+    },
     "Location" : {
       "localizations" : {
         "zh-Hans" : {
@@ -281,12 +291,32 @@
         }
       }
     },
+    "Release Notes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发行说明"
+          }
+        }
+      }
+    },
     "Run App" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "运行App"
+          }
+        }
+      }
+    },
+    "Scanning Applications..." : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在扫描应用程序..."
           }
         }
       }

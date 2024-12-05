@@ -61,9 +61,25 @@ struct ContentView: View {
                 .padding(.vertical, 12)
                 
                 List(selection: $viewModel.selectedAppId) {
-                    ForEach(viewModel.filteredApps) { app in
-                        AppInfoRowView(app: app)
-                            .tag(app.id)
+                    if viewModel.isScanning {
+                        HStack {
+                            Spacer()
+                            VStack(spacing: 12) {
+                                ProgressView()
+                                    .scaleEffect(1.0)
+                                    .controlSize(.regular)
+                                Text("Scanning Applications...")
+                                    .foregroundColor(.secondary)
+                                    .font(.system(size: 13))
+                            }
+                            .padding(.vertical, 300)  // 通过增加垂直内边距来调整位置
+                            Spacer()
+                        }
+                    } else {
+                        ForEach(viewModel.filteredApps) { app in
+                            AppInfoRowView(app: app)
+                                .tag(app.id)
+                        }
                     }
                 }
             }

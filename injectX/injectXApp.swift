@@ -9,19 +9,23 @@
 import SwiftUI
 import Sparkle
 
-// 保持 CheckForUpdatesViewModel 和 CheckForUpdatesView 不变
+// This view model class publishes when new updates can be checked by the user
 final class CheckForUpdatesViewModel: ObservableObject {
     @Published var canCheckForUpdates = false
-    
+
     init(updater: SPUUpdater) {
         updater.publisher(for: \.canCheckForUpdates)
             .assign(to: &$canCheckForUpdates)
     }
 }
 
+// This is the view for the Check for Updates menu item
+// Note this intermediate view is necessary for the disabled state on the menu item to work properly before Monterey.
+// See https://stackoverflow.com/questions/68553092/menu-not-updating-swiftui-bug for more info
 struct CheckForUpdatesView: View {
     @ObservedObject private var checkForUpdatesViewModel: CheckForUpdatesViewModel
     private let updater: SPUUpdater
+    @State private var releaseNotesWindowController: ReleaseNotesWindowController?
     
     init(updater: SPUUpdater) {
         self.updater = updater
@@ -29,40 +33,58 @@ struct CheckForUpdatesView: View {
     }
     
     var body: some View {
-        Button("Check for Updates…", action: updater.checkForUpdates)
-            .disabled(!checkForUpdatesViewModel.canCheckForUpdates)
+        Group {
+            Button("Check for Updates…", action: updater.checkForUpdates)
+                .disabled(!checkForUpdatesViewModel.canCheckForUpdates)
+            
+            Button("Release Notes") {
+                if releaseNotesWindowController == nil {
+                    releaseNotesWindowController = ReleaseNotesWindowController()
+                }
+                releaseNotesWindowController?.show()
+            }
+        }
     }
 }
 
-class AppDelegate: NSObject, NSApplicationDelegate {
-    let updaterController: SPUStandardUpdaterController
-    
-    override init() {
-        // 创建更新控制器，使用默认的界面和行为
-        updaterController = SPUStandardUpdaterController(
-            startingUpdater: true,
-            updaterDelegate: nil,
-            userDriverDelegate: nil
+class ReleaseNotesWindowController: NSWindowController {
+    init() {
+        let contentView = NSHostingView(rootView: ReleaseNotesWindow())
+        let window = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 800, height: 600),
+            styleMask: [.titled, .closable, .miniaturizable, .resizable],
+            backing: .buffered,
+            defer: false
         )
-        
-        super.init()
-        
-        // 配置自动更新
-        let updater = updaterController.updater
-        updater.automaticallyChecksForUpdates = true      // 启用自动检查更新
-//        updater.automaticallyDownloadsUpdates = false     // 不自动下载更新
-        updater.updateCheckInterval = 3600              // 检查间隔设为1小时（3600秒）
+        window.contentView = contentView
+        window.title = "Release Notes"
+        window.center()
+        super.init(window: window)
     }
     
-    func applicationDidFinishLaunching(_ notification: Notification) {
-        // 应用启动时在后台检查更新
-        updaterController.updater.checkForUpdatesInBackground()
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func show() {
+        window?.makeKeyAndOrderFront(nil)
     }
 }
+
+
 
 @main
 struct MyApp: App {
-    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    private let updaterController: SPUStandardUpdaterController
+    
+    init() {
+            // If you want to start the updater manually, pass false to startingUpdater and call .startUpdater() later
+            // This is where you can also pass an updater delegate if you need one
+            updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
+        
+        }
+    
     
     var body: some Scene {
         WindowGroup {
@@ -71,7 +93,7 @@ struct MyApp: App {
         .windowResizability(.contentSize)
         .commands {
             CommandGroup(after: .appInfo) {
-                CheckForUpdatesView(updater: appDelegate.updaterController.updater)
+                CheckForUpdatesView(updater: updaterController.updater)
             }
         }
     }
