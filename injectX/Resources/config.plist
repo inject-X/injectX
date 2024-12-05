@@ -88,11 +88,12 @@
 		<key>arch</key>
 		<array>
 			<string>arm64</string>
+			<string>x86_64</string>
 		</array>
 		<key>bundleShortVersion</key>
-		<string>1.27.2</string>
+		<string>1.28.1</string>
 		<key>bundleVersion</key>
-		<string>123</string>
+		<string>126</string>
 		<key>injectFile</key>
 		<string>BoltAI</string>
 	</dict>

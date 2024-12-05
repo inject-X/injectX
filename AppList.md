@@ -291,7 +291,7 @@ EA7E-8888888
             </tr>
             <tr>
                 <td>BoltAI</td>
-                <td>1.27.2</td>
+                <td>1.28.1</td>
                 <td>arm64</td>
                 <td>-</td>
             </tr>
