@@ -207,7 +207,7 @@ EA7E-8888888
             </tr>
             <tr>
                 <td>Paste</td>
-                <td>4.4.1</td>
+                <td>4.4.2</td>
                 <td>arm64</td>
                 <td>-</td>
             </tr>

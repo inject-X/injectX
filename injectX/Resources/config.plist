@@ -190,7 +190,7 @@
 		<string>ALL</string>
 		<key>command</key>
 		<array>
-			<string>defaults write com.binarynights.ForkLift registrationData -data "7b227175616e74697479223a3939392c2276616c696469747944617465223a333132343035313230302c227369676e6174757265223a22222c226e616d65223a226875616e6740676d61696c2e636f6d222c226c6963656e73655f74797065223a332c226c6963656e73654b6579223a22424e464c303330312d42544352343137352d35353433323535302d3432363432313232227d"</string>
+			<string>defaults write com.binarynights.ForkLift registrationData -data &quot;7b227175616e74697479223a3939392c2276616c696469747944617465223a333132343035313230302c227369676e6174757265223a22222c226e616d65223a226875616e6740676d61696c2e636f6d222c226c6963656e73655f74797065223a332c226c6963656e73654b6579223a22424e464c303330312d42544352343137352d35353433323535302d3432363432313232227d&quot;</string>
 		</array>
 		<key>fixHelper</key>
 		<string>true</string>
@@ -529,7 +529,7 @@
 		<key>command</key>
 		<array>
 			<string>defaults write com.mac.utility.media.hub IsOneTimePayment -bool true</string>
-			<string>defaults write com.mac.utility.media.hub purchasedPurductIdentifiers -array "store.vidhub.vip.lifetime"</string>
+			<string>defaults write com.mac.utility.media.hub purchasedPurductIdentifiers -array &quot;store.vidhub.vip.lifetime&quot;</string>
 		</array>
 		<key>injectFile</key>
 		<string>MediaCenter</string>
@@ -715,9 +715,9 @@
 			<string>arm64</string>
 		</array>
 		<key>bundleShortVersion</key>
-		<string>4.4.1</string>
+		<string>4.4.2</string>
 		<key>bundleVersion</key>
-		<string>10417</string>
+		<string>10560</string>
 		<key>injectFile</key>
 		<string>Paste</string>
 		<key>source</key>
