@@ -372,4 +372,10 @@ EA7E-8888888
                 <td>arm64</td>
                 <td>-</td>
             </tr>
+            <tr>
+                <td>Xnapper</td>
+                <td>ALL</td>
+                <td>arm64, x86_64</td>
+                <td>88888888-8888-8888-8888-888888888888</td>
+            </tr>
     </table>

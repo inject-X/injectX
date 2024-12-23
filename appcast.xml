@@ -4,13 +4,21 @@
         <title>injectX</title>
         <item>
             <title>1.0.0</title>
+            <pubDate>Mon, 23 Dec 2024 14:45:37 +0800</pubDate>
+            <sparkle:version>09</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3747592" type="application/octet-stream" sparkle:edSignature="9tPhcVmIIrRnEtk6F2Kfvrw/6V5Vz91sOSK0vCIa74JY6vdAEMGlFWu2qRak4rWtmrB7SyLohqDBBVD0QeG2Bg=="/>
+        </item>
+        <item>
+            <title>1.0.0</title>
             <pubDate>Mon, 23 Dec 2024 14:00:32 +0800</pubDate>
             <sparkle:version>08</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <ul>
-                    <li>Fixing the injection for APTV version 1.3.9.</li>
+                    <li>Fixed the inject for APTV version 1.3.9.</li>
                 </ul>
                 ]]></description>
             <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3747377" type="application/octet-stream" sparkle:edSignature="sYxBEaJPDun4kSba3gaTadghSg1PrpHLwtFyEHfuwuMFo+6rNl2VA/v30z4kJJLVbnVOnkpY4+iXMQutMsqEAA=="/>
@@ -23,91 +31,10 @@
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <ul>
-                    <li>Fix Picview and Longshot.</li>
+                    <li>Fixed Picview and Longshot.</li>
                 </ul>
                 ]]></description>
             <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3747380" type="application/octet-stream" sparkle:edSignature="v1QE0xtlBDOzfeniOomXiqmHRqh8quyy7T09Nfg6DUkpQPrRaUVz2FkrIV6ke9CttCacs2Jyoqd5JkyrDKpcAw=="/>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Sun, 22 Dec 2024 01:40:56 +0800</pubDate>
-            <sparkle:version>06</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <ul>
-                    <li>Supports Paste 4.4.2 (ARM64 only).</li>
-                </ul>
-                ]]></description>
-            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3750590" type="application/octet-stream" sparkle:edSignature="N9xEcsqsm/++EftXlMUO7PCg/dENPeOpoIvP5GNmhWmZNNL4fmCA0UwGGj8J5eYlcSqRMfwLmv9CpfWSUCTfAA=="/>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Tue, 10 Dec 2024 17:19:24 +0800</pubDate>
-            <sparkle:version>05</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <ul>
-                    <li>Supports QuickPlanTrial.</li>
-                </ul>
-                ]]></description>
-            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3747267" type="application/octet-stream" sparkle:edSignature="0+CmgbXV/aDgJl3rJOTQGTMQ8lyyLZV9zDx9JYVoGhSbgPszB6QECLBMD1D4PfRznXatvmtMVWCL9HHAIFu2Ag=="/>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Mon, 09 Dec 2024 15:02:16 +0800</pubDate>
-            <sparkle:version>04</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <ul>
-                    <li>Supports Slidepad.</li>
-                </ul>
-                ]]></description>
-            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3746778" type="application/octet-stream" sparkle:edSignature="Wm3O5JaNaY03+KcQQX0WcsYxXodzE//AApEXJOWP8jpViJQTOYQzFM9mzWsrcMDGEeOduG8hIrSu9LKCEw2ACA=="/>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Thu, 05 Dec 2024 18:45:50 +0800</pubDate>
-            <sparkle:version>03</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <ul>
-                    <li>Fixed some bugs for Sparkle;</li>
-                    <li>Added Release Notes.</li>
-                </ul>
-                ]]></description>
-            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3747125" type="application/octet-stream" sparkle:edSignature="/7GkBK9PvFqfPMCk7pNS0s1s38OB2AJybSfgz7H+jyEXh25twuTVWfGMLTF+Bj28EHIdgyVSeVOw+NBuWz8OBA=="/>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Thu, 05 Dec 2024 17:11:18 +0800</pubDate>
-            <sparkle:version>02</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <ul>
-                    <li>Supports BoltGPT version 1.28.1;</li>
-                    <li>Supports the x86_64 architecture of BoltGPT.</li>
-                </ul>
-                ]]></description>
-            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3699283" type="application/octet-stream" sparkle:edSignature="wFlSOtQjBGEfyyTIMF2CtZGok27zSFDkTXokuC0DJBtPCdm2rE7dLG+OQY6eGgVFtA8ram/6gGHIGnkDZ3AEDQ=="/>
-        </item>
-                <item>
-            <title>1.0.0</title>
-            <pubDate>Wed, 04 Dec 2024 20:22:39 +0800</pubDate>
-            <sparkle:version>01</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <ul>
-                    <li>Support for online updates;</li>
-                    <li>Optimized some functions and fixed known bugs.</li>
-                </ul>
-                ]]></description>
-            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3699280" type="application/octet-stream" sparkle:edSignature="wVOW3iBbcnt4WkmAu/x2zJcHtkQ8589K+GO8R0Dbw9OPXimEfZANQoxnwLbZnrrD6JRAvm8TWSjcEr58ulFqAQ=="/>
         </item>
     </channel>
 </rss>
