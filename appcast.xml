@@ -2,7 +2,21 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>injectX</title>
-                <item>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Tue, 07 Jan 2025 12:31:43 +0800</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>Add all versions of Airmail;</li>
+                    <li>Alcove 1.1.0 version is now supported.</li>
+                </ul>
+                ]]></description>
+            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3747767" type="application/octet-stream" sparkle:edSignature="8eeKflkBc9pU20QL0IAvVakyZCbOwOiQoHUcN0YCf4v8BEzRCr/NbnYQPkKOWmWPUrleXgHGgsgS95TbTbJcBA=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Wed, 25 Dec 2024 12:36:04 +0800</pubDate>
             <sparkle:version>10</sparkle:version>

@@ -378,4 +378,10 @@ EA7E-8888888
                 <td>arm64, x86_64</td>
                 <td>88888888-8888-8888-8888-888888888888</td>
             </tr>
+            <tr>
+                <td>Airmail</td>
+                <td>ALL</td>
+                <td>arm64, x86_64</td>
+                <td>-</td>
+            </tr>
     </table>
