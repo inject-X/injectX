@@ -4,6 +4,19 @@
         <title>injectX</title>
         <item>
             <title>1.0.0</title>
+            <pubDate>Mon, 10 Feb 2025 17:09:51 +0800</pubDate>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>Fix bugs caused by swift</li>
+                </ul>
+                ]]></description>
+            <enclosure url="https://github.com/inject-X/injectX/releases/latest/download/injectX.zip" length="3747457" type="application/octet-stream" sparkle:edSignature="Fnf2SzU5AE00mNZCaiiB7I8dYnaP9uKTVLfZjIb3cLRXX6/YwGsptQt8wfOo+8JyIs3+Qswmh+NNnt+3X/LEAQ=="/>
+        </item>
+        <item>
+            <title>1.0.0</title>
             <pubDate>Sun, 09 Feb 2025 21:16:51 +0800</pubDate>
             <sparkle:version>16</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
