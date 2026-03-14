@@ -65,6 +65,10 @@ Thanks to the following projects:
 - [qiuchenly](https://github.com/qiuchenly)
 - [marlkiller](https://github.com/marlkiller)
 
+## 💰 Sponsors
+
+- AI Model Provider: [NewNei](https://new.yunai.link) (Backup: [NewNei](https://newnei.apifast.top/))
+
 ## 📜 License
 
 See [LICENSE.md](LICENSE)
