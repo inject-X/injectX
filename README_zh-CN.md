@@ -63,6 +63,10 @@ Thanks to the following projects:
 - [qiuchenly](https://github.com/qiuchenly)
 - [marlkiller](https://github.com/marlkiller)
 
+## 💰 赞助
+
+- AI 模型提供商：[NewNei](https://new.yunai.link)（备用：[NewNei](https://newnei.apifast.top/)）
+
 ## 📜 许可
 
 详见 [LICENSE.md](LICENSE)
